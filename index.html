@@ -143,7 +143,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/09/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/10/google-play-receipt-validation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -157,7 +157,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/01/09/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2021/01/10/google-play-receipt-validation/" class="post-title-link" itemprop="url">google-play-receipt-validation</a>
         </h2>
 
         <div class="post-meta">
@@ -166,8 +166,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-01-09 04:29:41" itemprop="dateCreated datePublished" datetime="2021-01-09T04:29:41+00:00">2021-01-09</time>
+              <time title="Created: 2021-01-10 19:17:27 / Modified: 11:53:20" itemprop="dateCreated datePublished" datetime="2021-01-10T19:17:27+00:00">2021-01-10</time>
             </span>
 
           
@@ -181,15 +182,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+          <h2 id="Server-Side-Receipt-Validation-Google-Play"><a href="#Server-Side-Receipt-Validation-Google-Play" class="headerlink" title="Server Side Receipt Validation: Google Play"></a>Server Side Receipt Validation: Google Play</h2><h3 id="How"><a href="#How" class="headerlink" title="How"></a>How</h3><p>There is a good answer in <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/35127086/android-inapp-purchase-receipt-validation-google-play">stackoverflow</a>.</p>
+<h3 id="API"><a href="#API" class="headerlink" title="API"></a>API</h3><ul>
+<li><p><a target="_blank" rel="noopener" href="https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.products/get">purchases.products.get</a></p>
+<p>  Checks the purchase and consumption status of an inapp item.</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.subscriptions/get">purchases.subscriptions.get</a></p>
+<p>  Checks whether a user’s subscription purchase is valid and returns its expiry time.</p>
+</li>
+</ul>
+<h3 id="Authorization"><a href="#Authorization" class="headerlink" title="Authorization"></a>Authorization</h3><p>There is the <a target="_blank" rel="noopener" href="https://developers.google.com/android-publisher/authorization">authorization</a> doc.</p>
 
       
     </div>
@@ -273,6 +275,10 @@
           <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
       </div>
   </nav>
 </div>
