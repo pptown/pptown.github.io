@@ -1,10 +1,8 @@
 ---
-title: google-play-receipt-validation
+title: Server Side Receipt Validation - Google Play
 date: 2021-01-10 19:17:27
 tags: google-play
 ---
-
-## Server Side Receipt Validation: Google Play
 
 ### How
 
